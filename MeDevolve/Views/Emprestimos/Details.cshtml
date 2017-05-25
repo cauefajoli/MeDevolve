@@ -1,0 +1,58 @@
+﻿@model MeDevolve.Models.Emprestimo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Emprestimo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OBJETO.NOME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OBJETO.NOME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.USUARIO.NOME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.USUARIO.NOME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DATAEMP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DATAEMP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DATAPREVDEV)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DATAPREVDEV)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DATADEV)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DATADEV)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IDEMPRESTIMO }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
